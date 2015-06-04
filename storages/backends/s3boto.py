@@ -499,4 +499,4 @@ class S3BotoStorage(Storage):
         if self.file_overwrite:
             name = self._clean_name(name)
             return name
-        return super(S3BotoStorage, self).get_available_name(name, max_length)
+        return super(S3BotoStorage, self).get_available_name(name)
